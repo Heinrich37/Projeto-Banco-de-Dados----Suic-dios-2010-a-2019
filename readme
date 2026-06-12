@@ -1,0 +1,45 @@
+# Projeto Banco de Dados - Suicídios 2010 a 2019
+
+## Sobre o projeto
+
+Para a atividade foi utilizado como base um conjunto de dados sobre suicídios ocorridos entre os anos de 2010 e 2019. A partir dessas informações foi criado um banco de dados chamado **suicidio**, contendo tabelas relacionadas entre si para armazenar estados, estado civil, escolaridade, causas e os registros de suicídios.
+
+## Como executar o projeto
+
+1. Abra o MySQL Workbench ou outro gerenciador de banco de dados.
+2. Execute o script de criação do banco de dados.
+3. Execute os comandos para criação das tabelas.
+4. Insira os dados nas tabelas utilizando os comandos INSERT.
+5. Execute os comandos de criação das views.
+6. Utilize comandos SELECT para visualizar os resultados das consultas.
+
+Exemplo:
+
+```sql
+select * from vw_total_suicidios_estado;
+```
+
+## Desenvolvimento
+
+Primeiramente foi criado o banco de dados e as tabelas necessárias para armazenar as informações. Em seguida foram definidos os relacionamentos através das chaves estrangeiras.
+
+Após a criação das tabelas, foram inseridos os dados e criadas as views solicitadas na atividade.
+
+Durante o desenvolvimento consegui compreender melhor como funcionam os relacionamentos entre tabelas utilizando JOIN. Antes eu tinha dificuldade em entender a finalidade do JOIN, mas ao realizar a atividade percebi que ele serve para unir informações que estão armazenadas em tabelas diferentes.
+
+Também foi possível aprender melhor o funcionamento das views, que basicamente funcionam como consultas salvas, facilitando a visualização dos dados sem precisar escrever a mesma consulta várias vezes.
+
+## Views criadas
+
+* Listagem de idade, sexo e estado.
+* Total de registros por estado.
+* Top 10 estados com mais casos.
+* Quantidade de casos por escolaridade.
+* Quantidade de casos por estado civil.
+* Média de idade por estado.
+* Relatório completo com estado, estado civil, escolaridade, causa e quantidade de casos.
+
+## Considerações finais
+
+A realização desta atividade ajudou a reforçar os conceitos de modelagem de banco de dados, chaves primárias, chaves estrangeiras, JOIN, GROUP BY, funções de agregação e VIEW.
+
